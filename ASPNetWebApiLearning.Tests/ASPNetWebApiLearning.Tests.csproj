@@ -84,12 +84,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ASPNet4.6Learning\ASPNetWebApiLearning.csproj">
+    <ProjectReference Include="..\ASPNetWebApiLearning\ASPNetWebApiLearning.csproj">
       <Project>{9537F7C6-259B-44CC-8D24-5A272B6AF3DF}</Project>
       <Name>ASPNetWebApiLearning</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

@@ -5,16 +5,16 @@ using System.Web.Http;
 
 namespace ASPNetWebApiLearning.Controllers
 {
-    public class ProductsController : ApiController
+    public class ProductController : ApiController
     {
-        Product[] products = new Product[]
+        ProductModel[] products = new ProductModel[]
         {
-            new Product { Id = 1, Name = "Tomato Soup", Category = "Groceries", Price = 1 },
-            new Product { Id = 2, Name = "Yo-yo", Category = "Toys", Price = 3.75M },
-            new Product { Id = 3, Name = "Hammer", Category = "Hardware", Price = 16.99M }
+            new ProductModel { Id = 1, Name = "Tomato Soup", Category = "Groceries", Price = 1 },
+            new ProductModel { Id = 2, Name = "Yo-yo", Category = "Toys", Price = 3.75M },
+            new ProductModel { Id = 3, Name = "Hammer", Category = "Hardware", Price = 16.99M }
         };
 
-        public IEnumerable<Product> GetAllProducts()
+        public IEnumerable<ProductModel> GetAllProducts()
         {
             return products;
         }
